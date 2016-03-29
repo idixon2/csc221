@@ -23,7 +23,8 @@
 # Of course, that’s not quite right because Ouack and Quack are
 # misspelled. Can you fix it?
 #
-
+def test_ducklings ():
+    assert lab7.test_ducklings 
 
 
 # --------------------------------------------------------------------
@@ -38,7 +39,8 @@
 #
 # Essentially, the function is returning the number of occurances of the
 # parameter char in the parameter string.
-
+def test_count_letters ():
+    assert lab7.test_count_letters(stirng, char)
 
 
 # --------------------------------------------------------------------

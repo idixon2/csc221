@@ -50,7 +50,8 @@ def test_count_letters ():
 # 
 # Complete the following function such that it reverses the parameter
 # string.
-
+def test_reverse_string ():
+    assert lab7.test_reverse_string()
 
 
 # --------------------------------------------------------------------
@@ -61,4 +62,5 @@ def test_count_letters ():
 # Complete the following such that it correctly determines whether the
 # given parameter, string, is a palindrome
 # 
-
+def palindromes():
+    assert lab7.test_palindromes

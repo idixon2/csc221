@@ -23,8 +23,7 @@
 # Of course, that’s not quite right because Ouack and Quack are
 # misspelled. Can you fix it?
 #
-def test_ducklings ():
-    assert lab7.test_ducklings 
+ 
 
 
 # --------------------------------------------------------------------
@@ -39,8 +38,7 @@ def test_ducklings ():
 #
 # Essentially, the function is returning the number of occurances of the
 # parameter char in the parameter string.
-def test_count_letters ():
-    assert lab7.test_count_letters(stirng, char)
+
 
 
 # --------------------------------------------------------------------
@@ -50,8 +48,7 @@ def test_count_letters ():
 # 
 # Complete the following function such that it reverses the parameter
 # string.
-def test_reverse_string ():
-    assert lab7.test_reverse_string()
+
 
 
 # --------------------------------------------------------------------
@@ -62,5 +59,4 @@ def test_reverse_string ():
 # Complete the following such that it correctly determines whether the
 # given parameter, string, is a palindrome
 # 
-def palindromes():
-    assert lab7.test_palindromes
+

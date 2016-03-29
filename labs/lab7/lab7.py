@@ -9,27 +9,26 @@
 # The problem is that each of the solutions has an error in it. Your
 # unit tests should find these errors.
 
-
+import lab7_solution as sol
 
 # --------------------------------------------------------------------
 # Problem 1
-# 
+#
 # Fix ducklings' names
-# 
+#
 # In Robert McCloskey’s book Make Way for Ducklings, the names of the
 # ducklings are Jack, Kack, Lack, Mack, Nack, Ouack, Pack, and
 # Quack. This loop tries to output these names in order.
-# 
+#
 # Of course, that’s not quite right because Ouack and Quack are
 # misspelled. Can you fix it?
 #
-def test_ducklings ():
-    assert lab7.test_ducklings 
+
 
 
 # --------------------------------------------------------------------
 # Problem 2
-# 
+#
 # Letter count
 #
 # Modify the count_letters function below so that:
@@ -40,27 +39,28 @@ def test_ducklings ():
 # Essentially, the function is returning the number of occurances of the
 # parameter char in the parameter string.
 def test_count_letters ():
-    assert lab7.test_count_letters(stirng, char)
+    assert sol.count_letters("mapple", "p") == 2
+    assert sol.count_letters("apple", "p") == 2
 
 
 # --------------------------------------------------------------------
 # Problem 3
 #
 # Reversing a string
-# 
+#
 # Complete the following function such that it reverses the parameter
 # string.
 def test_reverse_string ():
-    assert lab7.test_reverse_string()
+    assert sol.reverse_string("ieshia") == "aihsei"
 
 
 # --------------------------------------------------------------------
 # Problem 4
-# 
+#
 # Checking for palindromes
-# 
+#
 # Complete the following such that it correctly determines whether the
 # given parameter, string, is a palindrome
-# 
-def palindromes():
-    assert lab7.test_palindromes
+#
+def test_palindromes():
+    assert sol.palindromes("bab") == "bab"

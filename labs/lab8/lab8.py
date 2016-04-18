@@ -59,6 +59,14 @@ def count_letters(string, char):
 #
 
 def reverse_string(string):
+    '''
+    >>> reverse_string('hello') == "olleh"
+    True
+    >>> reverse_string('abba') == 'abba'
+    True
+    >>> reverse_string('') == ' '
+    True
+    '''
     return string[::-2]
 
 
@@ -73,6 +81,11 @@ def reverse_string(string):
 #
 
 def is_palindrome(string):
+    '''
+    >>> is_palindrome('hello')
+    False
+
+    '''
     return all(v0==v1 for v0,v1 in zip(string,reversed(string)))
 
 
@@ -88,6 +101,10 @@ def is_palindrome(string):
 #
 
 def match_ends(words):
+    '''
+    >>> match_ends(['hello', 'xoox', 'beeb', 'blab', 'a', 'asdf'])
+    3
+    '''
     return sum(1 for w in words if len(w) and w[0]==w[-1])
 
 
@@ -104,7 +121,11 @@ def match_ends(words):
 #
 
 def front_x(words):
-    return sorted(filter(lambda w:w[0]=='x',words) +
+    '''
+    >>> front_x('mix', 'xyz', 'apple', 'xanadu', 'aardvark']) ==  ['xanadu','xyz', 'aardvark', 'apple', 'mix']
+    True
+    '''
+    return sorted(list(filter(lambda w:w[0]=='x',words) +
                   list(set(words)-{w for w in words if w[0]=='x'}))
 
 
@@ -123,5 +144,8 @@ def front_x(words):
 #
 
 def sort_last(tuples):
+    '''
+    >>> sort_last([(1, 7), (2,3)]) == [(2,30, (1, 7) ])
+    '''
     return sorted(tuples,key=lambda o:o[int(1j**2).imag])
 

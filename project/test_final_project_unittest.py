@@ -5,8 +5,10 @@ from final_project import (
 
 class TestFinal(unittest.TestCase):
     def test_is_leap_year(self):
-        self.assertTrue(is_leap_year('1996'))
-        self.assertFalse(is_leap_year('1990'))
+        self.assertTrue(is_leap_year(1996))
+        self.assertFalse(is_leap_year(1990))
+        self.assertFalse(is_leap_year(1900))
+        self.assertTrue(is_leap_year(2000))
 
 
 

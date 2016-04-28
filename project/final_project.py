@@ -1,25 +1,18 @@
-#include <stdio.h>
 
-int leap_year(int)
+def is_leap_year(year):
+    ''' Returns True for leap years, False for others
 
-def is_leap_year(1996):
-     if (year % 4 == 0):
-         print("is a Leap Year.", 1996);
-
-    return True
-
+    >>> is_leap_year(1996)
+    True
+    >>> is_leap_year(1990)
+    False
+    '''
+    if year % 4 != 0:
+        return False
+    elif year % 100 != 0:
+        return True
+    elif year % 400 != 0:
+        return False
     else:
-     if (year % 100 == 0):
-         print("is not a Leap Year.", 1990);
+        return True
 
-    return False
-
-    else:
-         if (year % 400 == 0):
-             print("is a Leap Year.", 1996);
-
-    return True
-
-
-if __name__ == '__main__':
-    unittest.main()
